@@ -1,0 +1,31 @@
+{
+  "short_name": "MarkLab",
+  "name": "Photo MarkLab",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo167.png",
+      "type": "image/png",
+      "sizes": "167x167"
+    },
+    {
+      "src": "logo180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "logo1024.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "description": "MarkLab可以帮助你创建独一无二的照片标记，通过读取Exif原数据，按下快门一刻的光圈、快门、ISO、时间及地理位置等数据将被完美展示。",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}

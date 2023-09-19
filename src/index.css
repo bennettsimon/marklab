@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 外文字体：Proxima Nova */
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("./asset/font/ProximaNova/Proxima\ Nova\ Alt\ Light.otf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("./asset/font/ProximaNova/Proxima\ Nova\ Alt\ Reg.otf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("./asset/font/ProximaNova/Proxima\ Nova\ Alt\ Bold.otf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("./asset/font/ProximaNova/Proxima\ Nova\ Alt\ Black.otf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* 外文字体：Neptune */
+@font-face {
+    font-family: "Neptune";
+    src: url("./asset/font/Neptune/Neptune-Extralight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neptune";
+    src: url("./asset/font/Neptune/Neptune-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neptune";
+    src: url("./asset/font/Neptune/Neptune-Medium.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neptune";
+    src: url("./asset/font/Neptune/Neptune-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neptune";
+    src: url("./asset/font/Neptune/Neptune-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neptune";
+    src: url("./asset/font/Neptune/Neptune-Extrabold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* PT Sans */
+@font-face {
+    font-family: "PT Sans";
+    src: url("./asset/font/PT\ Sans.ttf") format("truetype");
+    font-style: normal;
+}
+
+* {
+    /* 去除Safari移动端点击闪烁问题 */
+    -webkit-tap-highlight-color: transparent;
+    /* 禁止选中 */
+    -moz-user-select: none;
+    /*火狐*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -ms-user-select: none;
+    /*IE10*/
+    -khtml-user-select: none;
+    /*早期浏览器*/
+    user-select: none;
+}
+
+html,
+body,
+#root {
+    @apply w-full h-full bg-white !important
+}
+
+input:focus {
+    @apply outline-none
+}
+
+/* Gradient */
+.gradient_1 {
+    background: #40E0D0;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(135deg, #FF0080, #FF8C00, #40E0D0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(135deg, #FF0080, #FF8C00, #40E0D0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.animation_loop_ttb {
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-duration: 26s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+    animation-name: loop_ttb;
+    animation-play-state: running;
+    animation-timing-function: linear;
+}
+
+.animation_loop_btt {
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-duration: 26s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+    animation-name: loop_btt;
+    animation-play-state: running;
+    animation-timing-function: linear;
+}
+
+@keyframes loop_ttb {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes loop_btt {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+*::-webkit-scrollbar {
+    @apply w-0 h-0
+}
+
+/* 轨道 */
+*::-webkit-scrollbar-track {
+    @apply rounded-2xl my-0
+}
