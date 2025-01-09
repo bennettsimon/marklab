@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Photo Marklab
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/)
+Photo Marklab是运行在Web是程序，用于为照片添加时间、经纬度、品牌标志及自定义信息。
+演示：https://marklab.hisimon.me/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 预览
+<img width="1512" alt="Screenshot 2025-01-09 at 15 59 23" src="https://github.com/user-attachments/assets/7fcc937f-2a2f-4721-809a-7c42c05a5a92" />
 
-## Available Scripts
+<img width="1512" alt="Screenshot 2025-01-09 at 15 40 48" src="https://github.com/user-attachments/assets/43874f68-7f40-4a8b-b239-2af9c57b4fed" />
 
-In the project directory, you can run:
+## 功能
+- 支持直接读取相片exif信息，自动生成时间、经纬度、品牌标志
+- 支持全格式的照片格式包括Apple HEIC/HEIF
+- 支持自选品牌标志
+- 支持自定义文本信息
 
-### `npm start`
+## 安装与运行
+### 克隆项目
+```bash
+git clone https://github.com/bennettsimon/marklab.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+npm install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm start
+```  
